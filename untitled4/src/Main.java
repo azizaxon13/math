@@ -7,12 +7,15 @@ public class Main {
 
     public static void findPrimes(int n) {
 
-
     }
 
 
     public static void findEkub(int n, int k) {
-
+        while (n != k) {
+            if (n > k) n = n -k;
+            k = k - n;
+        }
+        System.out.println(n);
     }
 
     public static void findEkuk(int n, int k) {
