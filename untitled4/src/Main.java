@@ -7,7 +7,6 @@ public class Main {
 
     public static void findPrimes(int n) {
 
-
     }
 
 
