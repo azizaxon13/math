@@ -11,8 +11,6 @@ public class Main {
 
 
     public static void findEkub(int n, int k) {
-
-
         while (n != k) {
             if (n > k) {
                 n = n - k;
