@@ -11,7 +11,14 @@ public class Main {
 
 
     public static void findEkub(int n, int k) {
-    
+        while (n != k) {
+            if (n > k) {
+                n = n - k;
+            } else {
+                k = k - n;
+            }
+        }
+        System.out.println(n);
     }
 
     public static void findEkuk(int n, int k) {
