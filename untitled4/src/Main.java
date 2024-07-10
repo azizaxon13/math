@@ -1,8 +1,8 @@
 public class Main {
     public static void main(String[] args) {
         findPrimes(13);
-        findEkub(200, 113);
-        findEkuk(24, 13);
+        System.out.println(findEkub(200, 113));
+        System.out.println(findEkuk(24, 13));
     }
 
     public static void findPrimes(int n) {
@@ -31,18 +31,16 @@ public class Main {
     }
 
 
-    public static void findEkub(int n, int k) {
-        while (n != k) {
-            if (n > k) {
-                n = n - k;
-            } else {
-                k = k - n;
-            }
+    public static int findEkub(int n, int k) {
+        while (k != 0) {
+            int temp = k;
+            k = n % k;
+            n = temp;
         }
-        System.out.println(n);
+        return n;
     }
 
-    public static void findEkuk(int n, int k) {
-
+    public static int findEkuk(int n, int k) {
+        return (n * k) / findEkub(n, k);
     }
 }
